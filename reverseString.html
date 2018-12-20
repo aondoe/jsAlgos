@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Reverse string algorithm</title>
+</head>
+<body>
+
+<script>
+
+    let backwards=[]; //This line creates the array to contain the reverse string 
+
+        function spinWord(x){ //initialize the function. X is any string you want it to be, it's a parameter
+
+
+        for(counter=x.length; counter>0; counter--){//On this line we create a counter that will count backwards the end of the string.
+                //x.length. The .length part is a string property which returns a numerical value, telling us how many characters
+                // are in a string. The .length property includes spaces, so "Hello Jim".length has 9 characters
+                //where as "hello".length has 5 characters.
+                backwards.push(x[counter-1]);
+            }
+            document.writeln("The string '"+x+"' is now reversed: "+backwards);
+        }
+
+    spinWord("The Steelers");
+
+</script>
+
+</body>
+
+</html>
